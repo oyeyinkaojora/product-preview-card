@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              darkCyan: "hsl(158, 36%, 37%)",
+              cream: "hsl(30, 38%, 92%)",
+              veryDarkBlue: "hsl(212, 21%, 14%)",
+              darkGrayishBlue: "hsl(228, 12%, 48%)",
+              white: "hsl(0, 0%, 100%)",
+            },
+            fontFamily: {
+              sans: ["Montserrat", "sans-serif"],
+              serif: ["Fraunces", "serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-cream">
+    <!-- <div class="rounded h-screen flex-col py-20 px-20 bg-white mx-auto align-center justify-center ">
+      
+  </div> -->
+
+    <div class="flex h-screen items-center justify-center">
+      <div
+        class="container flex flex-col rounded-lg bg-white h-[800px] w-[450px] mx-auto mx-3 md:flex-row md:h-[600px] md:w-[900px]"
+      >
+        <div
+          class="rounded-t-lg bg-[url('images/image-product-mobile.jpg')] h-[350px] bg-center bg-cover bg-no-repeat md:bg-[url('images/image-product-desktop.jpg')] md:w-[950px] md:h-full md:rounded-l-lg md:rounded-tr-none"
+        ></div>
+        <div class="mx-3 my-3 flex space-y-5 flex-col md:mx-5 md:my-6 md:space-y-12">
+          <p class="text-darkGrayishBlue tracking-[7px] font-sans font-[500]">
+            PERFUME
+          </p>
+          <h3 class="text-veryDarkBlue font-[700] font-serif text-4xl">
+            Gabrielle Essence Eau De Parfum
+          </h3>
+          <p class="font-sans text-darkGrayishBlue font-light">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+
+          <p class="flex space-x-4">
+            <span class="text-5xl text-darkCyan font-serif font-[700]"
+              >$149.99</span
+            >
+            <span
+              class="text-center text-darkGrayishBlue font-sans line-through font-[500] mt-3"
+              >$169.99</span
+            >
+          </p>
+
+          <button class="text-center rounded-lg bg-darkCyan py-4 px-5">
+            <div class="flex justify-center align-center space-x-3">
+              <img src="images/icon-cart.svg" alt="cart" />
+              <span class="text-white font-sans font-[500]">Add to Cart</span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- font-family: 'Fraunces', serif; font-family: 'Montserrat', sans-serif; -->
+    <!-- Preview
+
+  Gabrielle Essence Eau De Parfum
+
+  
+
+  $149.99
+  $169.99
+
+  Add to Cart -->
+
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  </body>
+</html>
